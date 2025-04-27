@@ -44,30 +44,31 @@ def driver():
     driver.quit()
 
 
-# def test_Pagecar(driver):
-#     element = driver.find_element(By.XPATH, "//img[@alt='רכב']")
-#     element.click()
-#     sleep(3)
-#
-#     elements = driver.find_elements(By.XPATH, "//img[@data-testid='image']")
-#     if len(elements) > 0:
-#         print("open page car , Successfully! , number the elemnts = ", len(elements))
-
-
-def test_history(driver):
-    element = driver.find_element(By.XPATH,"//*[@id='__next']/div[1]/div[1]/header/div[4]/div/button")
-    sleep(5)
+def test_Pagecar(driver):
+    element = driver.find_element(By.XPATH, "//img[@alt='רכב']")
     element.click()
     sleep(3)
-    elements = driver.find_elements(By.XPATH, "//*[@id='__next']/div[1]/div[1]/header/div[4]/section/ul[2]/li[3]/a/span[1]")
-    elements[1].click()
-    sleep(10)
-    # element.click()
-    # elements = driver.find_elements(By.XPATH, "//a[@data-v-5ff130d0='']")
-    # if len(elements) > 0:
-    #     print("History search , Successfully! , number the elemnts = ", len(elements))
-    #
 
+    elements = driver.find_elements(By.XPATH, "//img[@data-testid='image']")
+    if len(elements) > 0:
+        print("open page car , Successfully! , number the elemnts = ", len(elements))
+
+
+# def test_history(driver):
+#     sleep(20)
+#
+#     element = driver.find_element(By.XPATH,"//*[@id='__next']/div[1]/div[1]/header/div[4]/div/button")
+#     element.click()
+#     sleep(3)
+#     elements = driver.find_elements(By.XPATH, "//*[@id='__next']/div[1]/div[1]/header/div[4]/section/ul[2]/li[3]/a/span[1]")
+#     elements[1].click()
+#     sleep(10)
+#     # element.click()
+#     # elements = driver.find_elements(By.XPATH, "//a[@data-v-5ff130d0='']")
+#     # if len(elements) > 0:
+#     #     print("History search , Successfully! , number the elemnts = ", len(elements))
+#     #
+#
 
 
 
